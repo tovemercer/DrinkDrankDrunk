@@ -6,7 +6,7 @@ class App extends Component {
     super()
     this.state = {}
     this.getDrinks = this.getDrinks.bind(this)
-    this.getDrinks = this.getDrink.bind(this)
+    this.getDrink = this.getDrink.bind(this)
   }
   componentDidMount () {
     this.getDrinks()

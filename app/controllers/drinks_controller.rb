@@ -1,9 +1,7 @@
 class DrinksController < ApiController
-  before_action :set_drink, only: [:show, :update, :destroy]
-
   # GET /drinks
   def index
-    @drinks = Drink.select("id, title").all
+    @drinks = Drink.all
 
     render json: @drinks.to_json
   end
